@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<title>Validate Using JavaScript</title>
+		<script type="text/javascript">
+				function validateUser() {
+					var uname = document.getElementById("Username").value;
+					var mail = document.getElementById("Email").value;
+					var addrs = document.getElementById("Address").value;
+					var pass = document.getElementById("Password").value;
+						if(uname =="") 
+						{
+							console.log("Empty Username");
+						} 
+						else
+						{
+							console.log(" Username Ok");
+						}
+						if(mail =="") 
+						{
+							console.log("Empty Email");
+						}
+						else
+						{
+							console.log(" Email Ok");
+						}
+						if(addrs =="") 
+						 {
+							console.log("Empty Address");
+						}
+						else
+						{
+							console.log(" Address Ok");
+						}
+						if(pass =="") 
+						{
+							console.log("Empty Password");
+						}
+						else
+						{
+							console.log("Password Ok");
+						}
+					}
+		</script>
+	</head>
+		<body>
+			Name<input type="text" id="Username"><br>
+			Email<input type="text" id="Email"><br>
+			Address<input type="text" id="Address"><br>
+			Password<input type="text" id="Password"><br>
+			<input type="button" value="Check Username" onclick="validateUser()"><br>
+		</body>
+</html>
